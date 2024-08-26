@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon_alura.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="assets/icon_alura.svg" alt="Icon Alura">
+        <section class="input_data">
+            <textarea type="text" placeholder="Digite seu texto" id="input_decoder"></textarea>
+            <div class="actions">
+                <div class="alert">
+                    <img src="assets/attention_icon.svg" alt="">
+                    <span>Apenas letras minúsculas e sem acento.</span>
+                </div>
+                <div class="buttons">
+                    <button class="encrypt" onclick="encrypt()">Criptografar</button>
+                    <button class="decrypt" onclick="decrypt()">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section id="section_output_standard">
+            <img src="assets/img_output.jpeg" alt="section_output">
+            <p class="value_output">Nenhuma mensagem encontrada</p>
+            <p class="sub_value_output">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </section>
+
+        <section id="encrypt_text_output" style="display: none;">
+            
+        </section>
+
+        
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
